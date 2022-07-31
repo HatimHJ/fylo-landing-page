@@ -1,0 +1,27 @@
+/*=============================================
+  Utilites
+=============================================*/
+@import './utils/color';
+@import './utils/layout';
+@import './utils/typography';
+@import './utils/buttons';
+@import './utils/mixin';
+@import './loader';
+@import './submain';
+
+/*=============================================
+  Basic
+=============================================*/
+*{@include reset();}
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto
+}
+
+/*=============================================
+  copyright
+=============================================*/
+@import './copyright';

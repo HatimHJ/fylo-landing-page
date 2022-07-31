@@ -1,0 +1,29 @@
+.navbar{  
+  .grid{
+    @include grid();
+    .logo{
+      grid-column: 1/4;
+      width: 5rem;
+    }
+    nav{
+      grid-column: 5/13;
+      .links.flex-row{
+        justify-content: flex-end;
+        gap: 3vw;
+        .link-item{
+          a{
+
+          }
+        }
+      }
+    }
+  }
+
+}
+
+// // media query
+// .navbar .grid{
+//       @media (max-width:320px) {
+//       display: block;
+//     }
+// }

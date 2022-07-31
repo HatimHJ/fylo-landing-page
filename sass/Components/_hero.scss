@@ -1,0 +1,41 @@
+.hero{
+  .grid{
+    @media (min-width:768px) {@include grid();}
+    .image{
+      @media (min-width:768px) {grid-column: 8/13;}      
+    }
+    .content{
+      gap: 1.5rem;
+      align-items: stretch;
+      padding-left: 5px;
+      padding-right: 5px;
+      @media (min-width:768px) {
+        grid-column: 1/7;
+        grid-row: 1;
+        padding-top: 0;
+        text-align: left;
+      }
+      h1{
+        @media (min-width:768px) {font-size: 1.25rem;}
+      }
+      p{
+        @media (min-width:768px) {font-size: .80rem;}
+      }
+      form{
+        @include grid();
+        @media (min-width:1024px) {max-width: 450px;}
+        gap: 1rem;
+        input, .custom-btn-1{grid-column: 1/13; padding: 10px;}
+        input{
+          border: 1px solid $blue-2;
+          @media (min-width:425px) {grid-column: 1/8;}
+        }
+        .custom-btn-1{
+          @include shadow-br(4, 5px);
+          @include bg-color($blue-3, white);
+          @media (min-width:425px) {grid-column: 8/13;}
+        }
+      }
+    }
+  }
+}

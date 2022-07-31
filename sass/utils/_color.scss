@@ -1,0 +1,75 @@
+$blue-1 : hsl(243, 87%, 12%);
+$blue-2 : hsl(238, 22%, 44%);
+$blue-3 : hsl(224, 93%, 58%);
+$green-1 : hsl(170, 45%, 43%);
+$blue-5 : hsl(240, 75%, 98%);
+$gray-1 : hsl(0, 0%, 75%);
+
+
+
+// Background
+
+.bg-blue-1{
+  background-color: $blue-1;
+}
+.bg-blue-2{
+  background-color: $blue-2;
+}
+.bg-blue-3{
+  background-color: $blue-3;
+}
+.bg-green-1{
+  background-color: $green-1;
+}
+.bg-blue-5{
+  background-color: $blue-5;
+}
+.bg-gray{
+  background-color: $gray-1;
+}
+.bg-white{
+  background-color: white;
+}
+.bg-dark{
+  background-color: #222;
+}
+
+// Text
+.text-blue-1{
+  color: $blue-1;
+}
+.text-blue-2{
+  color: $blue-2;
+}
+.text-blue-3{
+  color: $blue-3;
+}
+.text-green-1{
+  color: $green-1;
+}
+.text-blue-5{
+  color: $blue-5;
+}
+.text-gray{
+  color: $gray-1;
+}
+.text-white{
+  color: #eee;
+}
+.text-dark{
+  color: #222;
+}
+
+// opacity
+.opa-75{
+  opacity: .75;
+}
+.opa-50{
+  opacity: .50;
+}
+.opa-25{
+  opacity: .25;
+}
+.opa-0{
+  opacity: 0;
+}

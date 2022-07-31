@@ -1,0 +1,57 @@
+html{
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+@media (min-width:576px) {
+  html{
+    font-size: 18px;
+  }
+}
+@media (min-width:768px) {
+  html{
+    font-size: 20px;
+  }
+}
+@media (min-width:992px) {
+  html{
+    font-size: 20px;
+  }
+}
+@media (min-width:1200px) {
+  html{
+    font-size: 22px;
+  }
+}
+@media (min-width:1400px) {
+  html{
+    font-size: 22px;
+  }
+}
+
+// =================================================
+.raleway{
+  font-family: 'Raleway', sans-serif;
+}
+
+.open-sans{
+  font-family: 'Open Sans', sans-serif;
+}
+// =================================================
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}
+// =================================================
+@for $i from 1 through 7 {
+  .fs-#{$i} {
+    font-size: #{$i/3}rem;
+  }
+  .fw-#{$i} {
+    font-weight: #{$i}00;
+  }  
+}

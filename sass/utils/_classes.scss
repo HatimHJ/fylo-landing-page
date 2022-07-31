@@ -1,0 +1,57 @@
+// =================================================
+@for $i from 1 through 8 {
+
+  .pt-#{$i} {
+    padding-top: #{$i/2}rem;
+  }
+  .pb-#{$i} {
+    padding-bottom: #{$i/2}rem;
+  }
+  .pl-#{$i} {
+    padding-left: #{$i/2}rem;
+  }
+  .pr-#{$i} {
+    padding-right: #{$i/2}rem;
+  }
+  .px-#{$i} {
+    padding-right: #{$i/2}rem;
+    padding-left: #{$i/2}rem;
+  }
+  .py-#{$i} {
+    padding-top: #{$i/2}rem;
+    padding-bottom: #{$i/2}rem;
+  }
+  .mt-#{$i} {
+    margin-top: #{$i/2}rem;
+  }
+  .mb-#{$i} {
+    margin-bottom: #{$i/2}rem;
+  }
+  .ml-#{$i} {
+    margin-left: #{$i/2}rem;
+  }
+  .mr-#{$i} {
+    margin-right: #{$i/2}rem;
+  }
+  .mx-#{$i} {
+    margin-right: #{$i/2}rem;
+    margin-left: #{$i/2}rem;
+  }
+  .my-#{$i} {
+    margin-top: #{$i/2}rem;
+    margin-bottom: #{$i/2}rem;
+  }
+}
+// =================================================
+
+
+// make image black & white
+.img-bw{
+  filter: brightness(0) invert(1);
+}
+
+.avatar{
+  width: 40px;height: 40px;
+  border-radius: 50%;
+  margin: 0%;
+}
