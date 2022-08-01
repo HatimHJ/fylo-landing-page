@@ -55,3 +55,19 @@
   border-radius: 50%;
   margin: 0%;
 }
+
+.error-border{border: 1px solid #ff6347 !important;}
+.success-border{border: 1px solid #3c9f8f !important;}
+
+.error{
+  position: absolute;
+  display: block;
+  font-size: 12px;
+  margin: 5px 0;
+  height: 0px;
+  overflow: hidden;
+  transition: height .5s ;
+}
+
+
+

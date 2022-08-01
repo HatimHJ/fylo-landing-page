@@ -20,7 +20,7 @@
   form{
     @media (min-width:768px) {grid-column: 8/13;}
 
-    input{
+    .form-group{
       @include shadow-br(4, 4px);
       @media (min-width:425px) {grid-column: 1/7;}
       @media (min-width:768px) {

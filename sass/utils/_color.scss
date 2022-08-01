@@ -1,10 +1,10 @@
 $blue-1 : hsl(243, 87%, 12%);
 $blue-2 : hsl(238, 22%, 44%);
 $blue-3 : hsl(224, 93%, 58%);
-$green-1 : hsl(170, 45%, 43%);
+$green-1 : #3c9f8f;
 $blue-5 : hsl(240, 75%, 98%);
 $gray-1 : hsl(0, 0%, 75%);
-
+$red-1:#ff6347;
 
 
 // Background
@@ -58,6 +58,9 @@ $gray-1 : hsl(0, 0%, 75%);
 }
 .text-dark{
   color: #222;
+}
+.text-red-1{
+  color: $red-1;
 }
 
 // opacity
