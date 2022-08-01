@@ -1,3 +1,6 @@
+@import './color';
+@import './mixin';
+
 .btn{
   cursor: pointer;
   transition: all .3s;
@@ -7,3 +10,8 @@
   font-size: 16px;
 }
 
+.custom-btn-1{
+  @include shadow-br(4, 5px);
+  @include bg-color($blue-3, white);
+  @media (min-width:425px) {grid-column: 8/13;}
+}

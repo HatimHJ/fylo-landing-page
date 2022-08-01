@@ -1,0 +1,42 @@
+.newsletter{
+  .grid{
+
+    @media (min-width:768px) {@include grid();}
+
+  }
+  .content{
+    @media (min-width:768px) {
+      text-align: left;
+      grid-column: 1/7;
+      p{
+        padding-top: 1rem;
+        padding-bottom: 0;
+        max-width: 550px;
+        font-size: 18px;
+      }
+    }
+
+  }
+  form{
+    @media (min-width:768px) {grid-column: 8/13;}
+
+    input{
+      @include shadow-br(4, 4px);
+      @media (min-width:425px) {grid-column: 1/7;}
+      @media (min-width:768px) {
+        max-width: 400px;
+        grid-column: 1/13;
+        grid-row: 1;
+      }
+      
+    }
+    .custom-btn-1{      
+      @media (min-width:425px) {grid-column: 7/13;}
+      @media (min-width:768px) {
+        grid-column: 1/10;
+        max-width: 220px;
+        grid-row: 2;
+      }
+    }
+  }
+}

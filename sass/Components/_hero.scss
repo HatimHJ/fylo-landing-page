@@ -21,21 +21,19 @@
       p{
         @media (min-width:768px) {font-size: .80rem;}
       }
-      form{
-        @include grid();
-        @media (min-width:1024px) {max-width: 450px;}
-        gap: 1rem;
-        input, .custom-btn-1{grid-column: 1/13; padding: 10px;}
-        input{
-          border: 1px solid $blue-2;
-          @media (min-width:425px) {grid-column: 1/8;}
-        }
-        .custom-btn-1{
-          @include shadow-br(4, 5px);
-          @include bg-color($blue-3, white);
-          @media (min-width:425px) {grid-column: 8/13;}
-        }
-      }
     }
+  }
+}
+form{
+  @include grid();
+  @media (min-width:1024px) {max-width: 450px;}
+  gap: 1rem;
+  input, .custom-btn-1{grid-column: 1/13; padding: 10px;}
+  input{
+    border: 1px solid $blue-2;
+    @media (min-width:425px) {grid-column: 1/8;}
+  }
+  .custom-btn-1{
+    @media (min-width:425px) {grid-column: 8/13;}
   }
 }

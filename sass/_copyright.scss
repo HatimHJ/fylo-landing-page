@@ -15,5 +15,6 @@ $neutral-light-gray: hsl(0, 0%, 98%);
   text-align: center;
   background-color:darken($color:  $neutral-dark-blue, $amount: 10);
   font-size: .85rem;
+  color: white;
   a{color: $primary-red;}
 }

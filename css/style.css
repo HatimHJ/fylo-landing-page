@@ -219,6 +219,86 @@ html {
   font-weight: 700;
 }
 
+.bg-blue-1 {
+  background-color: hsl(243deg, 87%, 12%);
+}
+
+.bg-blue-2 {
+  background-color: hsl(238deg, 22%, 44%);
+}
+
+.bg-blue-3 {
+  background-color: hsl(224deg, 93%, 58%);
+}
+
+.bg-green-1 {
+  background-color: hsl(170deg, 45%, 43%);
+}
+
+.bg-blue-5 {
+  background-color: hsl(240deg, 75%, 98%);
+}
+
+.bg-gray {
+  background-color: hsl(0deg, 0%, 75%);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-dark {
+  background-color: #222;
+}
+
+.text-blue-1 {
+  color: hsl(243deg, 87%, 12%);
+}
+
+.text-blue-2 {
+  color: hsl(238deg, 22%, 44%);
+}
+
+.text-blue-3 {
+  color: hsl(224deg, 93%, 58%);
+}
+
+.text-green-1 {
+  color: hsl(170deg, 45%, 43%);
+}
+
+.text-blue-5 {
+  color: hsl(240deg, 75%, 98%);
+}
+
+.text-gray {
+  color: hsl(0deg, 0%, 75%);
+}
+
+.text-white {
+  color: #eee;
+}
+
+.text-dark {
+  color: #222;
+}
+
+.opa-75 {
+  opacity: 0.75;
+}
+
+.opa-50 {
+  opacity: 0.5;
+}
+
+.opa-25 {
+  opacity: 0.25;
+}
+
+.opa-0 {
+  opacity: 0;
+}
+
 .btn {
   cursor: pointer;
   transition: all 0.3s;
@@ -226,6 +306,18 @@ html {
   padding: 10px;
   transition: all 0.4s;
   font-size: 16px;
+}
+
+.custom-btn-1 {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  border-radius: 5px;
+  background: hsl(224deg, 93%, 58%);
+  color: white;
+}
+@media (min-width: 425px) {
+  .custom-btn-1 {
+    grid-column: 8/13;
+  }
 }
 
 .loader-container {
@@ -806,37 +898,32 @@ html {
     font-size: 0.8rem;
   }
 }
-.hero .grid .content form {
+
+form {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
   gap: 1rem;
 }
 @media (min-width: 1024px) {
-  .hero .grid .content form {
+  form {
     max-width: 450px;
   }
 }
-.hero .grid .content form input, .hero .grid .content form .custom-btn-1 {
+form input, form .custom-btn-1 {
   grid-column: 1/13;
   padding: 10px;
 }
-.hero .grid .content form input {
+form input {
   border: 1px solid hsl(238deg, 22%, 44%);
 }
 @media (min-width: 425px) {
-  .hero .grid .content form input {
+  form input {
     grid-column: 1/8;
   }
 }
-.hero .grid .content form .custom-btn-1 {
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-  border-radius: 5px;
-  background: hsl(224deg, 93%, 58%);
-  color: white;
-}
 @media (min-width: 425px) {
-  .hero .grid .content form .custom-btn-1 {
+  form .custom-btn-1 {
     grid-column: 8/13;
   }
 }
@@ -961,6 +1048,175 @@ html {
   }
 }
 
+@media (min-width: 768px) {
+  .newsletter .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .newsletter .content {
+    text-align: left;
+    grid-column: 1/7;
+  }
+  .newsletter .content p {
+    padding-top: 1rem;
+    padding-bottom: 0;
+    max-width: 550px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) {
+  .newsletter form {
+    grid-column: 8/13;
+  }
+}
+.newsletter form input {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  border-radius: 4px;
+}
+@media (min-width: 425px) {
+  .newsletter form input {
+    grid-column: 1/7;
+  }
+}
+@media (min-width: 768px) {
+  .newsletter form input {
+    max-width: 400px;
+    grid-column: 1/13;
+    grid-row: 1;
+  }
+}
+@media (min-width: 425px) {
+  .newsletter form .custom-btn-1 {
+    grid-column: 7/13;
+  }
+}
+@media (min-width: 768px) {
+  .newsletter form .custom-btn-1 {
+    grid-column: 1/10;
+    max-width: 220px;
+    grid-row: 2;
+  }
+}
+
+footer .footer .logo {
+  max-width: 8rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (min-width: 768px) {
+  footer .footer .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+  }
+  footer .footer .grid .col-1 {
+    grid-column: 1/4;
+  }
+  footer .footer .grid .col-1 p {
+    font-size: 0.8rem;
+  }
+  footer .footer .grid .col-2 {
+    grid-column: 5/7;
+  }
+  footer .footer .grid .col-3 {
+    grid-column: 7/9;
+    margin-top: 0;
+  }
+  footer .footer .grid .col-4 {
+    grid-column: 9/13;
+  }
+}
+footer .footer .grid .col-1 p.flex {
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+  margin-left: 0;
+}
+@media (min-width: 1024px) {
+  footer .footer .grid .col-1 p.flex {
+    max-width: 90%;
+  }
+}
+@media (min-width: 768px) {
+  footer .footer .grid .col-2,
+footer .footer .grid .col-3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+footer .footer .grid .col-2 p,
+footer .footer .grid .col-3 p {
+  margin-left: 0;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+footer .footer .grid .col-2 p:hover,
+footer .footer .grid .col-3 p:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+@media (min-width: 768px) {
+  footer .footer .grid .col-2 p,
+footer .footer .grid .col-3 p {
+    font-size: 0.8rem;
+  }
+}
+footer .footer .huddle-cr, footer .footer .social {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  footer .footer .social {
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: right;
+  }
+}
+@media (min-width: 1024px) {
+  footer .footer .social {
+    text-align: left;
+  }
+}
+footer .footer .social i {
+  transition: all 0.4s;
+  margin-inline: 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.6rem 1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer .social i:hover {
+  color: hsl(224deg, 93%, 58%);
+  border-color: hsl(224deg, 93%, 58%);
+}
+@media (min-width: 768px) {
+  footer .footer .social i {
+    margin-inline: 5px;
+  }
+}
+footer .footer p.huddle-cr {
+  font-size: 10px;
+}
+@media (min-width: 768px) {
+  footer .footer p.huddle-cr {
+    font-size: 12px;
+    text-align: right;
+    margin: auto;
+    margin-right: 0;
+  }
+}
+@media (min-width: 1024px) {
+  footer .footer p.huddle-cr {
+    font-size: 14px;
+    max-width: 70%;
+    text-align: right;
+  }
+}
+
 /*=============================================
   Basic
 =============================================*/
@@ -994,6 +1250,7 @@ img {
   text-align: center;
   background-color: #363745;
   font-size: 0.85rem;
+  color: white;
 }
 .copyright a {
   color: hsl(0deg, 78%, 62%);
