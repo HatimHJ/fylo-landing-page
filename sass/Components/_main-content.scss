@@ -4,7 +4,7 @@
   padding-bottom: 6rem;
   &::before{
     @media (min-width:425px) {
-      background-image: url(../../images/bg-curve-desktop.svg);
+      background-image: url(../images/bg-curve-desktop.svg);
       top: -2rem;
     }
     @media (min-width:768px) {top: -3rem;}
@@ -12,7 +12,7 @@
     content: "";
     position: absolute;
     top: -2.5rem;
-    background: url(../../images/bg-curve-mobile.svg);
+    background: url(../images/bg-curve-mobile.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;

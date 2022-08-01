@@ -968,7 +968,7 @@ form .form-group input {
   content: "";
   position: absolute;
   top: -2.5rem;
-  background: url(../../images/bg-curve-mobile.svg);
+  background: url(../images/bg-curve-mobile.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
@@ -977,7 +977,7 @@ form .form-group input {
 }
 @media (min-width: 425px) {
   .main-content::before {
-    background-image: url(../../images/bg-curve-desktop.svg);
+    background-image: url(../images/bg-curve-desktop.svg);
     top: -2rem;
   }
 }

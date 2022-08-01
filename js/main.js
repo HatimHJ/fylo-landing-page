@@ -1,5 +1,5 @@
-const email = document.querySelectorAll("#email");
-const emailbtn = document.querySelectorAll("#submit");
+const email = document.querySelectorAll(".email");
+const emailbtn = document.querySelectorAll(".submit");
 const form = document.querySelector("form.grid");
 
 emailbtn.forEach((btn, i) => {

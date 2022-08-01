@@ -29,7 +29,7 @@
 	</head>
 	<body>
 		<!-- navbar -->
-		<section class="navbar py-2">
+		<section class="navbar py-2" role="menubar">
 			<div class="container grid">
 				<div class="logo">
 					<img src="./images/logo.svg" alt="logo" />
@@ -44,7 +44,7 @@
 			</div>
 		</section>
 		<!-- hero -->
-		<section class="hero mb-8 py-8">
+		<section class="hero mb-8 py-8" role="banner">
 			<div class="container grid">
 				<div class="image">
 					<img src="./images/illustration-1.svg" alt="illustration-1" />
@@ -58,12 +58,16 @@
 						them wherever you need, share and collaborate with friends, family,
 						and co-workers
 					</p>
-					<form action="" class="grid">
+					<form class="grid">
 						<div class="form-group">
-							<input type="text" id="email" placeholder="Enter your email..." />
+							<input
+								type="text"
+								class="email"
+								placeholder="Enter your email..."
+							/>
 							<span class="error text-red-1">Please Check Your Email</span>
 						</div>
-						<button id="submit" class="btn custom-btn-1 fw-7 raleway">
+						<button class="submit btn custom-btn-1 fw-7 raleway">
 							Get Started
 						</button>
 					</form>
@@ -119,7 +123,7 @@
 			</div>
 		</main>
 		<!-- newsletter -->
-		<section class="newsletter bg-blue-2 py-8 text-white">
+		<section class="newsletter bg-blue-2 py-8 text-white" role="option">
 			<div class="container grid">
 				<div class="content text-center">
 					<h2 class="raleway fw-6">Get early access today</h2>
@@ -131,10 +135,10 @@
 				</div>
 				<form class="grid">
 					<div class="form-group">
-						<input type="text" id="email" placeholder="example@email.com" />
+						<input type="text" class="email" placeholder="example@email.com" />
 						<span class="error">Please Checdsdsdsk Your Email</span>
 					</div>
-					<button id="submit" class="btn custom-btn-1 fw-7 raleway">
+					<button class="submit btn custom-btn-1 fw-7 raleway">
 						Get Started For Free
 					</button>
 				</form>
@@ -192,7 +196,7 @@
 			</div>
 		</footer>
 		<!-- copyright -->
-		<section class="copyright">
+		<section class="copyright" role="contentinfo">
 			<p class="attribution">
 				<i class="ri-copyright-line ri-2x"></i>
 				<span>
